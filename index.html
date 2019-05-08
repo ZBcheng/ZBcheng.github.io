@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load staticfiles %}
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -12,7 +11,6 @@
   <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  {% csrf_token %}
 
   <nav class="white" role="navigation" style="padding-left: 0px">
     <div class="nav-wrapper container" style="float: left;">
@@ -50,16 +48,15 @@
       </div>
     </div>
 
-  {% for essay in essays %}
   <div class="row" style="margin-left: 5%; margin-top: 4%">
     <div class="col s12 m7">
       <div class="card">
         <div class="card-image">
-          <img src="{% static '/images/background.jpg' %}">
-          <span class="card-title">{{ essay.title }}</span>
+          <img src="/static/images/background.jpg">
+          <span class="card-title">测试标题1</span>
         </div>
         <div class="card-content">
-          <p>{{ essay.desc }}</p>
+          <p>测试简介2</p>
         </div>
         <div class="card-action">
           <a href="#">查看文章</a>
@@ -67,24 +64,6 @@
       </div>
     </div>
   </div>
-  {% endfor %}
-
-{#  <ul id="slide-out" class="sidenav">#}
-{#    <li><div class="user-view">#}
-{#      <div class="background">#}
-{#        <img src="images/office.jpg">#}
-{#      </div>#}
-{#      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>#}
-{#      <a href="#name"><span class="white-text name">John Doe</span></a>#}
-{#      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>#}
-{#    </div></li>#}
-{#    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>#}
-{#    <li><a href="#!">Second Link</a></li>#}
-{#    <li><div class="divider"></div></li>#}
-{#    <li><a class="subheader">Subheader</a></li>#}
-{#    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>#}
-{#  </ul>#}
-{#  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>#}
 
 
     <ul id="slide-out" class="sidenav">
