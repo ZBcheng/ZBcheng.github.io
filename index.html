@@ -1,45 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Bee's Blog</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bee's Blog</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
-
-  <nav class="white" role="navigation" style="padding-left: 0px">
-    <div class="nav-wrapper container" style="float: left;">
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="/static/css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
+  <body>
+    <!-- topbar -->
+    <nav class="white" role="navigation" style="padding-left: 0px">
+      <div class="nav-wrapper container" style="float: left;">
         <ul>
-            <li style="margin-left: 7%" onclick="show_sidebar()"><a><i class="material-icons">menu</i></a></li>
-            <li style="padding-left: 10px"><a id="logo-container" href="#" class="brand-logo">Bee's Blog</a></li>
-            <script src="/static/js/sidenav.js"></script>
+          <li style="margin-left: 7%" onclick="show_sidebar()">
+            <a><i class="material-icons">menu</i></a>
+          </li>
+          <li style="padding-left: 10px">
+            <a id="logo-container" href="#" class="brand-logo">Bee's Blog</a>
+          </li>
+          <script src="/static/js/sidenav.js"></script>
         </ul>
 
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
 
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
 
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
-
-  <div style="margin-right:5%; margin-top:4%; float:right; width:30%;">
+    <!-- info card -->
+    <div style="margin-right:5%; margin-top:4%; float:right; width:30%;">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
           <span class="card-title">推荐文章</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>
+            I am a very simple card. I am good at containing small bits of
+            information. I am convenient because I require little markup to use
+            effectively.
+          </p>
         </div>
         <div class="card-action">
           <a href="#">This is a link</a>
@@ -48,85 +68,75 @@
       </div>
     </div>
 
-  <div class="row" style="margin-left: 5%; margin-top: 4%">
-    <div class="col s12 m7">
-      <div class="card">
-        <div class="card-image">
-          <img src="/static/images/background.jpg">
-          <span class="card-title">测试标题1</span>
-        </div>
-        <div class="card-content">
-          <p>测试简介2</p>
-        </div>
-        <div class="card-action">
-          <a href="#">查看文章</a>
+    <!-- essay card -->
+    <div class="row" style="margin-left: 5%; margin-top: 4%">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img src="/static/images/background.jpg" />
+            <span class="card-title">Python单链表的操作</span>
+          </div>
+          <div class="card-content">
+            <p>测试简介2</p>
+          </div>
+          <div class="card-action">
+            <a href="/linked_structer.html">查看文章</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-
+    <!-- sidenav -->
     <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="/static/images/background.jpg">
-      </div>
-      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-      <a href="#name"><span class="white-text name">John Doe</span></a>
-      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-    </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-  </ul>
-
-
-
-
-
-  <footer class="page-footer teal" style="margin-top:4%">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="/static/images/background.jpg" />
+          </div>
+          <a href="#user"><img class="circle" src="images/yuna.jpg"/></a>
+          <a href="#name"><span class="white-text name">Jerry Bee</span></a>
+          <a href="#email"
+            ><span class="white-text email">Bee0_0@outlook.com</span></a
+          >
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+      </li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li>
+        <a class="waves-effect" href="#!"
+          ><i class="material-icons">cloud</i>Third Link With Waves</a
+        >
+      </li>
+    </ul>
+
+    <!-- footer -->
+    <footer class="page-footer teal" style="margin-top:4%">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">联系作者</h5>
+            <p class="grey-text text-lighten-4">邮箱 Bee0_0@outlook.com</p>
+            <p class="grey-text text-lighten-4">微信 JerryBee0_0</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
 
+      <!-- footer-copyright -->
+      <div class="footer-copyright">
+        <div class="container">
+          Github仓库地址
+          <a
+            class="brown-text text-lighten-3"
+            href="https://github.com/ZBcheng/ZBcheng.github.io"
+            >https://github.com/ZBcheng/ZBcheng.github.io</a
+          >
+        </div>
+      </div>
+    </footer>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="/static/js/materialize.js"></script>
-  <script src="/static/js/init.js"></script>
-
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/static/js/materialize.js"></script>
+    <script src="/static/js/init.js"></script>
   </body>
 </html>
