@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bee's Blog</title>
+    <title>单链表结构</title>
 
     <!-- CSS  -->
     <link
@@ -22,6 +22,14 @@
       rel="stylesheet"
       media="screen,projection"
     />
+
+    <link href="/static/css/essaystyle.css" type="text/css" rel="stylesheet" />
+
+    <link
+      href="/static/css/atom-one-dark.css"
+      type="text/css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -33,26 +41,63 @@
             <a><i class="material-icons">menu</i></a>
           </li>
           <li style="padding-left: 10px">
-            <a id="logo-container" href="#" class="brand-logo">Bee's Blog</a>
+            <a id="logo-container" href="/index.html" class="brand-logo"
+              >Bee's Blog</a
+            >
           </li>
           <script src="/static/js/sidenav.js"></script>
         </ul>
-
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
-        >
       </div>
     </nav>
 
+    <div class="essay">
+      <h3 class="title">单链表结构</h3>
+      <p class="text">
+        单链表是一种链式存取的数据结构，用一组地址任意的存储单元存放线性表中的数据元素。链表中的数据是以结点来表示的，每个结点的构成：元素(数据元素的映象)
+        +
+        指针(指示后继元素存储位置)，元素就是存储数据的存储单元，指针就是连接每个结点的地址数据。<br /><br />
+        单链表的节点表示如下
+      </p>
+      <pre
+        class="hljs"
+        style="height: 120px"
+      ><code class="python">class Node(object):
+    def __init__(self, data, next):
+    self.data = data
+    self.next = next</code></pre>
+
+      <!-- sidenav -->
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="/static/images/background.jpg" />
+            </div>
+            <a href="#user"><img class="circle" src="images/yuna.jpg"/></a>
+            <a href="#name"><span class="white-text name">Jerry Bee</span></a>
+            <a href="#email"
+              ><span class="white-text email">Bee0_0@outlook.com</span></a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Subheader</a></li>
+        <li>
+          <a class="waves-effect" href="#!"
+            ><i class="material-icons">cloud</i>Third Link With Waves</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/static/js/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="/static/js/materialize.js"></script>
     <script src="/static/js/init.js"></script>
   </body>
