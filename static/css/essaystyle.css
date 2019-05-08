@@ -3,15 +3,15 @@
 }
 
 .essaycard {
-  margin-left: 7%;
-  margin-top: 4%;
+  margin-left: 15%;
+  padding-right: 5%;
 }
 
 .infocard {
-  margin-right: 7%;
+  margin-right: 15%;
   margin-top: 4%;
   float: right;
-  width: 30%;
+  width: 20%;
 }
 
 .essay {
