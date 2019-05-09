@@ -71,14 +71,18 @@
           使用Python表示单链表的节点:
       </p>
       
-      <pre
-        class="hljs"
-        style="height: 120px"
-      ><code class="python">class Node(object):
+    <pre class="hljs" style="height: 120px"><code class="python">class Node(object):
     def __init__(self, data, next):
     self.data = data
     self.next = next</code></pre>
-
+        <!-- <div class="imgbox"><img src="static/images/linked_list2.jpg" /></div> -->
+        
+        <h5 class="title-2">使用单链表节点类</h5>
+        <p class="text">节点变量可初始化为None或一个新的node对象</p>
+        <pre class="hljs" style="height: 120px"><code class="python">node1 = None
+node2 = Node("A", None)
+node3 = Node("B", node2)</code></pre>
+        <div class="imgbox"><img src="static/images/node_class2.jpg" /></div>
       <!-- sidenav -->
       <ul id="slide-out" class="sidenav">
         <li>
