@@ -61,9 +61,11 @@
         指针(指示后继元素存储位置)，元素就是存储数据的存储单元，指针就是连接每个结点的地址数据。<br /><br />
         
       </p>
-      <h5 class="title-2">单链表的节点</h5>
+      <h4 class="title-2">单链表的节点</h4>
       <p class="text">
-        单链表节点的结构如下图所示，其中DATA用来存放数据，NEXT则用于连接下一个节点
+        单链表节点的结构如下图所示，它包含了两个部分:
+        <li class="text">一个数据项</li>
+        <li class="text">到结构中下一个节点的链接</li><br>
         <div class="imgbox"><img src="static/images/node.jpg" /></div>
         
       </p>
@@ -79,10 +81,58 @@
         
         <h5 class="title-2">使用单链表节点类</h5>
         <p class="text">节点变量可初始化为None或一个新的node对象</p>
-        <pre class="hljs" style="height: 120px"><code class="python">node1 = None
+        <pre class="hljs" style="height: 100px"><code class="python">node1 = None
 node2 = Node("A", None)
 node3 = Node("B", node2)</code></pre>
+        <p class="text">以上三个节点的状态如图:</p>
         <div class="imgbox"><img src="static/images/node_class2.jpg" /></div>
+        <p class="text">
+            以上的三个节点:
+            <li class="text">node1没有指向节点对象</li>
+            <li class="text">node2和node3指向了所链接的对象</li>
+            <li class="text">node2指向对象的下一个指针为None</li>
+        </p>
+
+        <h4 class="title-2">
+            单链表结构上的操作
+        </h4>
+
+        <h5 class="title-2">遍历</h5>
+        <div class="imgbox">
+            <img src="/static/images/traversal2.jpg">
+        </div>
+        
+        <pre class="hljs" style="height: 100px"><code class="python">probe = head
+while probe != None:
+    probe = probe.next</code></pre>
+
+        <h5 class="title-2">搜索</h5>
+        <pre class="hljs"><code class="python">probe = head
+while probe != None and targetItem != probe.data:
+    probe = probe.next
+if probe != None:
+    print("目标值存在!")
+else:
+    print("目标值不存在!")</code></pre>
+
+        <h5 class="title-2">替换</h5>
+        <p class="text">将链表中某一节点的值替换为另一个值</p>
+        <pre class="hljs"><code class="python">probe = head
+while probe != None and targetItem != probe.data:
+    probe = probe.next
+if probe != None:
+    probe.data = newItem
+    return True
+else:
+    return false</code></pre>
+        <p class="text">替换链表中的第i项</p>
+        <pre class="hljs" style="height: 140px"><code class="python">probe = head
+while index > 0:
+    probe = probe.next
+    index = -1
+probe.data = newItem
+        </code></pre>
+
       <!-- sidenav -->
       <ul id="slide-out" class="sidenav">
         <li>
