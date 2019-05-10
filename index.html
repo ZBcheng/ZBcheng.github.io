@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"
+    />
 
     <title>Bee's Blog</title>
 
@@ -58,11 +62,13 @@
       </div>
     </nav>
 
-    <div class="parallax-container">
+    <!-- parallax -->
+    <div id="index-banner" class="parallax-container">
       <div class="parallax">
-        <img src="/static/images/index.jpg" />
+        <img id="banner-img" src="/static/images/index.jpg" />
       </div>
     </div>
+
     <!-- <img src="/static/images/pythonimage.jpg" style="width: 100%" /> -->
     <!-- info card -->
     <div class="infocard">
@@ -84,6 +90,22 @@
     </div>
 
     <!-- essay card -->
+    <div class="essaycard" style="margin-top: 4%">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img src="/static/images/pythonimage.jpg" />
+              <span class="card-title">Python单链表</span>
+            </div>
+            <div class="card-action">
+              <a class="essay-link" href="/linked_structer.html">查看文章</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="essaycard" style="margin-top: 4%">
       <div class="row">
         <div class="col s12 m6">

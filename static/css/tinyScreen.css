@@ -3,8 +3,8 @@
 }
 
 .essaycard {
-  margin-left: 10%;
-  padding-right: 5%;
+  margin-left: 2%;
+  padding-right: 2%;
 }
 
 .card-link {
@@ -23,8 +23,8 @@
 .essay {
   float: left;
   margin: auto;
-  padding-left: 13%;
-  padding-right: 13%;
+  padding-left: 3%;
+  padding-right: 3%;
   padding-top: 5%;
   padding-bottom: 7%;
 }
@@ -42,7 +42,9 @@
 
 .text {
   padding-top: 20px;
-  font-size: 18px;
+  font-size: 26px;
+  letter-spacing: 3px;
+  line-height: 38px;
 }
 
 .hljs {
