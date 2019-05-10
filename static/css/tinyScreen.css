@@ -12,16 +12,12 @@
 }
 
 .infocard {
-  visibility: hidden;
+  display: None;
   float: right;
   margin-right: 10%;
   margin-top: 4%;
   float: right;
   width: 25%;
-}
-
-.nav-wrapper {
-  margin: auto;
 }
 
 .essay {
