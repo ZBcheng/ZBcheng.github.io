@@ -99,14 +99,25 @@ node3 = Node("B", node2)</code></pre>
 
         <h5 class="title-2">遍历</h5>
         <div class="imgbox">
-            <img src="/static/images/traversal2.jpg">
+            <img src="/static/images/traversal2.jpg" style="width: 70%">
         </div>
         
+        <p>
+            <li class="text">第1轮开始，访问节点D1</li>
+            <li class="text">第2轮开始，访问节点D2</li>
+            <li class="text">第3轮开始，访问节点D3</li>
+            <li class="text">第3轮结束probe是None，循环结束</li>
+        </p><br>
+
         <pre class="hljs" style="height: 100px"><code class="python">probe = head
 while probe != None:
-    probe = probe.next</code></pre>
+    probe = probe.next</code></pre><br>
 
         <h5 class="title-2">搜索</h5>
+        <p class="text">搜索目标项时，可能会出现以下两种情况:
+            <li class="text">probe指向空链接，表明没有搜索到目标项</li>
+            <li class="text">等于目标项的一个数据项，表明搜索成功</li>
+        </p>
         <pre class="hljs"><code class="python">probe = head
 while probe != None and targetItem != probe.data:
     probe = probe.next
@@ -114,7 +125,12 @@ if probe != None:
     print("目标值存在!")
 else:
     print("目标值不存在!")</code></pre>
-
+        <br>
+        <p class="text">访问第i项:</p>
+        <pre class="hljs" style="height: 120px"><code class="python">probe = head
+    while index > 0:
+        probe = probe.next
+    return probe.data</code></pre><br>
         <h5 class="title-2">替换</h5>
         <p class="text">将链表中某一节点的值替换为另一个值</p>
         <pre class="hljs"><code class="python">probe = head
@@ -131,14 +147,19 @@ while index > 0:
     probe = probe.next
     index = -1
 probe.data = newItem
-        </code></pre>
+        </code></pre><br>
+        <h5 class="title-2">在开始处插入</h5>
+        <p>
+            <li class="text">第一种情况: head为None</li>
+            <p class="text">head的初始状态</p>
+        </p>
 
       <!-- sidenav -->
       <ul id="slide-out" class="sidenav">
         <li>
           <div class="user-view">
             <div class="background">
-              <img src="/static/images/background.jpg" />
+              <img src="/static/images/background.jpg"/>
             </div>
             <a href="#user"><img class="circle" src="images/yuna.jpg"/></a>
             <a href="#name"><span class="white-text name">Jerry Bee</span></a>
