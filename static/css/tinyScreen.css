@@ -14,8 +14,6 @@
 .infocard {
   display: None;
   float: right;
-  margin-left: 10%;
-
   margin-right: 10%;
   margin-top: 4%;
   float: right;
@@ -24,7 +22,8 @@
 
 .essay {
   float: left;
-  margin: auto;
+  margin-left: 10%;
+  margin-right: 10%;
   padding-top: 5%;
   padding-bottom: 7%;
 }
