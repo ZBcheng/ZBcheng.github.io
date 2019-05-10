@@ -12,6 +12,7 @@
 }
 
 .infocard {
+  visibility: hidden;
   display: None;
   float: right;
   margin-right: 10%;
