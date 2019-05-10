@@ -11,6 +11,10 @@
   line-height: 38px;
 }
 
+.nav-wrapper {
+  margin: auto;
+}
+
 .infocard {
   float: right;
   margin-right: 10%;
