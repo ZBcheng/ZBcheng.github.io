@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=0.4, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no"
+    />
+    <title>Mac打造Windows Terminal同款终端</title>
+
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="/static/css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+
+    <link
+      href="/static/css/atom-one-dark.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/css/essaystyle.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen and (min-device-width:800px)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (max-device-width:800px)"
+      href="/static/css/tinyScreen.css"
+    />
+  </head>
+
+  <body>
+    <!-- topbar -->
+    <nav class="white" role="navigation" style="padding-left: 0px">
+      <div class="nav-wrapper container" style="float: left;">
+        <ul>
+          <li style="margin-left: 7%" onclick="show_sidebar()">
+            <a><i class="material-icons">menu</i></a>
+          </li>
+          <li style="padding-left: 10px">
+            <a
+              id="logo-container"
+              href="/index.html"
+              style="color:#3E9388; font-size: 35px"
+              >Bee's Blog</a
+            >
+          </li>
+          <script src="/static/js/sidenav.js"></script>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="essay">
+      <h4 class="title">Mac打造Windows Terminal同款终端</h4>
+      <p class="text">
+        近两天来，github上的“斩星狂魔”当属微软发布的Windows
+        Terminal，暂且不论它的功能属性，光看这新界面，香不？？？<br /><br />
+        <div class="imgbox">
+            <img src="/static/images/windows_terminal.png" style="width: 100%;"/>
+        </div>
+        
+      </p>
+      <p class="text">
+          身为高(zhuang)级(bi)的mac用户，这肯定忍不了，但是打开终端看一眼，哎！太丑了，办法总是人想出来的，window都能土鸡变凤凰，mac一定也可以，我灵机一动，得到了一个全新的terminal
+          <img src="/static/images/iterm_desktop.png" style="width: 100%">
+      </p>
+    </div>
+
+      <!-- sidenav -->
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="/static/images/background.jpg" />
+            </div>
+            <a href="#user"
+              ><img class="circle" src="/static/images/head.jpg"
+            /></a>
+            <a href="#name"><span class="white-text name">Jerry Bee</span></a>
+            <a href="#email"
+              ><span class="white-text email">Bee0_0@outlook.com</span></a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li>
+          <a class="subheader"
+            ><i class="material-icons">link </i>博主项目链接</a
+          >
+        </li>
+        <li>
+          <a
+            class="waves-effect"
+            href="https://github.com/ZBcheng/bookstore_management_system"
+            >基于Django的简单web项目 <Third Link With Waves</a
+          >
+          <a class="waves-effect" href="https://github.com/ZBcheng/HNR">
+            Tensorflow的手写数字识别小程序</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!--  Scripts-->
+    <script src="/static/js/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/materialize.js"></script>
+    <script src="/static/js/init.js"></script>
+  </body>
+</html>
