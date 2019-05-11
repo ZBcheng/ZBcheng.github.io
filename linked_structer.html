@@ -75,7 +75,7 @@
           使用Python表示单链表的节点:
       </p>
       
-    <pre class="hljs" style="height: 120px"><code class="python">class Node(object):
+    <pre class="hljs-meta" ><code class="python" style="height: 120px">class Node(object):
     def __init__(self, data, next):
     self.data = data
     self.next = next</code></pre>
@@ -83,7 +83,7 @@
         
         <h5 class="title-2">使用单链表节点类</h5>
         <p class="text">节点变量可初始化为None或一个新的node对象</p>
-        <pre class="hljs" style="height: 100px"><code class="python">node1 = None
+        <pre class="hljs-meta"><code class="python" style="height: 100px">node1 = None
 node2 = Node("A", None)
 node3 = Node("B", node2)</code></pre>
         <p class="text">以上三个节点的状态如图:</p>
@@ -111,7 +111,7 @@ node3 = Node("B", node2)</code></pre>
             <li class="text">第3轮结束probe是None，循环结束</li>
         </p><br>
 
-        <pre class="hljs" style="height: 100px"><code class="python">probe = head
+        <pre class="hljs-meta" ><code class="python" style="height: 100px">probe = head
 while probe != None:
     probe = probe.next</code></pre><br>
 
@@ -120,7 +120,7 @@ while probe != None:
             <li class="text">probe指向空链接，表明没有搜索到目标项</li>
             <li class="text">等于目标项的一个数据项，表明搜索成功</li>
         </p>
-        <pre class="hljs"><code class="python">probe = head
+        <pre class="hljs-meta"><code class="python">probe = head
 while probe != None and targetItem != probe.data:
     probe = probe.next
 if probe != None:
@@ -129,13 +129,13 @@ else:
     print("目标值不存在!")</code></pre>
         <br>
         <p class="text">访问第i项:</p>
-        <pre class="hljs" style="height: 120px"><code class="python">probe = head
+        <pre class="hljs-meta"><code class="python" style="height: 120px">probe = head
     while index > 0:
         probe = probe.next
     return probe.data</code></pre><br>
         <h5 class="title-2">替换</h5>
         <p class="text">将链表中某一节点的值替换为另一个值</p>
-        <pre class="hljs"><code class="python">probe = head
+        <pre class="hljs-meta"><code class="python">probe = head
 while probe != None and targetItem != probe.data:
     probe = probe.next
 if probe != None:
@@ -144,7 +144,7 @@ if probe != None:
 else:
     return false</code></pre>
         <p class="text">替换链表中的第i项</p>
-        <pre class="hljs" style="height: 140px"><code class="python">probe = head
+        <pre class="hljs-meta"><code class="python" style="height: 155px">probe = head
 while index > 0:
     probe = probe.next
     index = -1

@@ -3,8 +3,12 @@
 }
 
 .essaycard {
-  margin-left: 2%;
-  padding-right: 2%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.python {
+  font-size: 18px;
 }
 
 .card-link {
