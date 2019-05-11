@@ -8,7 +8,7 @@
 }
 
 .python {
-  font-size: 18px;
+  font-size: 26px;
 }
 
 .card-link {
@@ -37,11 +37,19 @@
 .title-2 {
   padding-top: 20px;
   font-weight: bold;
+  font-size: 32px;
+}
+
+.title-3 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  color: gray;
 }
 
 .text {
   padding-top: 20px;
-  font-size: 26px;
+  font-size: 28px;
   letter-spacing: 3px;
   line-height: 38px;
 }
@@ -53,4 +61,24 @@
 
 .imgbox {
   text-align: center;
+}
+
+#code1-1-1 {
+  height: 150px;
+}
+
+#code1-2-1 {
+  height: 150px;
+}
+
+#code1-2-2 {
+  height: 300px;
+}
+
+#code1-2-4 {
+  height: 330px;
+}
+
+#code1-2-5 {
+  height: 215px;
 }

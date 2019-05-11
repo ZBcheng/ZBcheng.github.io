@@ -75,15 +75,15 @@
           使用Python表示单链表的节点:
       </p>
       
-    <pre class="hljs-meta" ><code class="python" style="height: 120px">class Node(object):
+    <pre class="hljs-meta" ><code id="code1-1-0" class="python">class Node(object):
     def __init__(self, data, next):
     self.data = data
     self.next = next</code></pre>
         <!-- <div class="imgbox"><img src="static/images/linked_list2.jpg" /></div> -->
         
-        <h5 class="title-2">使用单链表节点类</h5>
+        <h5 class="title-3">使用单链表节点类</h5>
         <p class="text">节点变量可初始化为None或一个新的node对象</p>
-        <pre class="hljs-meta"><code class="python" style="height: 100px">node1 = None
+        <pre class="hljs-meta"><code id="code1-1-1" class="python">node1 = None
 node2 = Node("A", None)
 node3 = Node("B", node2)</code></pre>
         <p class="text">以上三个节点的状态如图:</p>
@@ -99,7 +99,7 @@ node3 = Node("B", node2)</code></pre>
             单链表结构上的操作
         </h4>
 
-        <h5 class="title-2">遍历</h5>
+        <h5 class="title-3">遍历</h5>
         <div class="imgbox">
             <img src="/static/images/traversal2.jpg" style="width: 70%">
         </div>
@@ -111,16 +111,16 @@ node3 = Node("B", node2)</code></pre>
             <li class="text">第3轮结束probe是None，循环结束</li>
         </p><br>
 
-        <pre class="hljs-meta" ><code class="python" style="height: 100px">probe = head
+        <pre class="hljs-meta" ><code id="code1-2-1" class="python">probe = head
 while probe != None:
     probe = probe.next</code></pre><br>
 
-        <h5 class="title-2">搜索</h5>
+        <p class="title-3">搜索</p>
         <p class="text">搜索目标项时，可能会出现以下两种情况:
             <li class="text">probe指向空链接，表明没有搜索到目标项</li>
             <li class="text">等于目标项的一个数据项，表明搜索成功</li>
         </p>
-        <pre class="hljs-meta"><code class="python">probe = head
+        <pre class="hljs-meta"><code id="code1-2-2" class="python">probe = head
 while probe != None and targetItem != probe.data:
     probe = probe.next
 if probe != None:
@@ -129,13 +129,13 @@ else:
     print("目标值不存在!")</code></pre>
         <br>
         <p class="text">访问第i项:</p>
-        <pre class="hljs-meta"><code class="python" style="height: 120px">probe = head
+        <pre class="hljs-meta"><code id="code1-2-3" class="python">probe = head
     while index > 0:
         probe = probe.next
     return probe.data</code></pre><br>
-        <h5 class="title-2">替换</h5>
+        <p class="title-3">替换</p>
         <p class="text">将链表中某一节点的值替换为另一个值</p>
-        <pre class="hljs-meta"><code class="python">probe = head
+        <pre class="hljs-meta"><code id="code1-2-4" class="python">probe = head
 while probe != None and targetItem != probe.data:
     probe = probe.next
 if probe != None:
@@ -144,13 +144,13 @@ if probe != None:
 else:
     return false</code></pre>
         <p class="text">替换链表中的第i项</p>
-        <pre class="hljs-meta"><code class="python" style="height: 155px">probe = head
+        <pre class="hljs-meta"><code id="code1-2-5" class="python">probe = head
 while index > 0:
     probe = probe.next
     index = -1
 probe.data = newItem
         </code></pre><br>
-        <h5 class="title-2">在开始处插入</h5>
+        <p class="title-3">在开始处插入</p>
         <p>
             <li class="text">第一种情况: head为None</li>
             <p class="text">head的初始状态</p>
