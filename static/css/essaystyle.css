@@ -60,6 +60,10 @@
   text-align: center;
 }
 
+.python {
+  font-size: 16px;
+}
+
 #code1-1-0 {
   height: 120px;
 }
@@ -78,4 +82,20 @@
 
 #code1-2-5 {
   height: 155px;
+}
+
+#code2-2-1 {
+  height: 80px;
+}
+
+#code2-3-1 {
+  height: 80px;
+}
+
+#code2-3-2 {
+  height: 80px;
+}
+
+#code2-4-1 {
+  height: 100px;
 }

@@ -73,14 +73,61 @@
         近两天来，github上的“斩星狂魔”当属微软发布的Windows
         Terminal，暂且不论它的功能属性，光看这新界面，香不？？？<br /><br />
         <div class="imgbox">
-            <img src="/static/images/windows_terminal.png" style="width: 100%;"/>
+            <img src="/static/images/terminal/windows_terminal.png" style="width: 100%;"/>
         </div>
         
       </p>
       <p class="text">
           身为高(zhuang)级(bi)的mac用户，这肯定忍不了，但是打开终端看一眼，哎，太丑了！办法总是人想出来的，window都能土鸡变凤凰，mac没道理不行，我灵机一动，得到了一个全新的terminal
-          <img src="/static/images/iterm_desktop.png" style="width: 100%">
+          <img src="/static/images/terminal/iterm2_img.png" style="width: 100%">
       </p>
+      <p class="text">
+          那么这个东西到底怎么装呢？
+          所需材料:
+          <h5 class="title-2">1.安装: <a href="http://www.iterm2.com/">iTerm2</a></h5>
+          <h4 class="text">进入Preferences->Color Presets可选择主题</h4>
+          <div class="imgbox">
+              <img src="static/images/terminal/color_presets.png" style="width: 100%">
+          </div>
+          <h5 class="title-2">2.打开iTerm2, 输入以下命令安装
+              <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>
+            <pre class="hljs-meta"><code id="code2-2-1" class="python">curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/
+install.sh | sh</code></pre>
+            <div class="imgbox">
+                <img src="/static/images/terminal/oh_my_zsh_img.png" style="width: 100%;">
+            </div>
+          </h5>
+          
+          <h5 class="title-2">3.安装主题: <a href="https://github.com/denysdovhan/spaceship-prompt">Spaceship Prompt</a></h5>
+          <h4 class="text">依次在iTerm中运行以下两条命令</h4>
+        <pre class="hljs-meta"><code id="code2-3-1" class="python">git clone https://github.com/denysdovhan/spaceship-prompt.git 
+"$ZSH_CUSTOM/themes/spaceship-prompt"</code></pre>
+        <pre class="hljs-meta"><code id="code2-3-2" class="python">ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" 
+"$ZSH_CUSTOM/themes/spaceship.zsh-theme"</code></pre>
+        <h4 class="text">完成后使用vim进入.zshrc，设置 ZSH_THEME="spaceship"</h4>
+        <h5 class="title-2">4.安装字体 Powerline Fonts</h5>
+        <h4 class="text">spaceship安装之后，还有些细节不够完美，比如</h4>
+        <div class="imgbox">
+            <img src="static/images/terminal/error_exam.png">
+        </div>
+        <h4 class="text">这是字体不支持所导致的，还需安装Powerline Fonts</h4>
+        <pre class="hljs-meta"><code id="code2-4-1" class="python">git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh</code></pre>
+        <h4 class="text">安装完成后进入iTerm2 Preferences->Text->Font->Mselo</h4>
+        <div class="imgbox">
+            <img src="static/images/terminal/master_img.png" style="width: 70%">
+        </div>
+        <h5 class="title-2">5.配色</h5>
+        <h4 class="text">配色是非常重要的一步，进入Preferences,Transparency调整透明度，勾选Blur调整毛玻璃效果，Colors进行字体配色调整</h4>
+        <div class="imgbox">
+            <img src="static/images/terminal/transparency.png" style="width: 100%">
+        </div>
+        <h5 class="title-2">ojbk 大功告成</h5>
+        <div class="imgbox">
+            <img src="static/images/terminal/vim_img.png" style="width: 100%;">
+            <img src="/static/images/terminal/iterm2_img.png" style="width: 100%;" />
+        </div>
     </div>
 
       <!-- sidenav -->
