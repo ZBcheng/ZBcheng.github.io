@@ -64,6 +64,11 @@
   font-size: 16px;
 }
 
+.imgbox {
+  text-align: center;
+  width: 100%;
+}
+
 #code1-1-0 {
   height: 120px;
 }
