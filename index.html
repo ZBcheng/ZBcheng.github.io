@@ -41,7 +41,7 @@
       href="/static/css/tinyScreen.css"
     />
   </head>
-  <body>
+  <body class="body">
     <!-- topbar -->
     <nav class="white" role="navigation" style="padding-left: 0px">
       <div class="nav-wrapper container" style="float: left;">
@@ -69,59 +69,37 @@
       </div>
     </div>
 
-    <!-- info card -->
-    <div class="infocard">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">博主项目链接</span>
-        </div>
-        <div class="card-action">
-          <a
-            href="https://github.com/ZBcheng/bookstore_management_system"
-            class="card-link"
-            >基于Django的简单web项目</a
-          ><br />
-          <a href="https://github.com/ZBcheng/HNR" class="card-link"
-            >基于Tensorflow的手写数字识别小程序</a
-          >
-        </div>
-      </div>
-    </div>
-
     <!-- essay card -->
-    <div class="essaycard" style="margin-top: 4%">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <a href="linked_structer.html"
-                ><img src="/static/images/linked_structer/pythonimage.jpg"
-              /></a>
-            </div>
-            <div class="card-action">
-              <a class="essay-link" href="/linked_structer.html"
-                >Python单链表</a
-              >
-            </div>
+    <div class="index-essay">
+      <div class="essaycard">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <a href="linked_structer.html"
+              ><img
+                src="/static/images/linked_structer/pythonimage.jpg"
+                style="height: 20%;"
+            /></a>
+          </div>
+          <div class="card-action">
+            <a class="essay-link" href="/linked_structer.html">Python单链表</a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="essaycard" style="margin-top: 3%">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <a href="/terminal.html"
-                ><img src="/static/images/terminal/iterm.png" alt=""
-              /></a>
-            </div>
-            <div class="card-action">
-              <a class="essay-link" href="/terminal.html"
-                >打造Windows Terminal同款终端</a
-              >
-            </div>
+      <div class="essaycard">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <a href="/terminal.html"
+              ><img
+                src="/static/images/terminal/iterm.png"
+                alt=""
+                style="height: 20%;"
+            /></a>
+          </div>
+          <div class="card-action">
+            <a class="essay-link" href="/terminal.html"
+              >打造Windows Terminal同款终端</a
+            >
           </div>
         </div>
       </div>
@@ -160,7 +138,7 @@
     </ul>
 
     <!-- footer -->
-    <footer class="page-footer teal" style="margin-top:10%; max-height: 30vh;">
+    <footer class="page-footer teal" style="margin-top:20%; max-height: 30vh;">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
