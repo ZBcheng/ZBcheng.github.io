@@ -2,20 +2,19 @@
   font-size: 20px;
 }
 
-.body {
-  background-color: #151e21;
+.essaycard {
+  margin: auto;
+  padding-top: 10%;
+  width: 90%;
 }
 
-.essaycard {
-  padding-top: 10%;
+.essay-link {
+  font-size: 15px;
 }
 
 .index-essay {
   margin: auto;
-  padding-left: 1%;
-  padding-right: 1%;
   padding-top: 5%;
-  padding-bottom: 17%;
 }
 
 .python {
